@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" id=lightstyle>
+    <link rel="stylesheet" href="darkstyle.css" disabled id=darkstyle>
+    <meta name="description" content="this an  website to get infos about countries">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a6a94f6575.js" crossorigin="anonymous"></script>
+    <title>Front End Mentor Challenge | countries API</title>
+</head>
+
+<body>
+    <header>
+        <h1>Where in the world ?</h1>
+        <div class="mode">
+            <em class="fas fa-moon nonDisplay" id=dark></em>
+            <em class="far fa-moon " id=light></em>
+            <h2>Dark Mode</h2>
+        </div>
+    </header>
+    <main>
+        <section class="firstPart">
+            <div class="searchField">
+                <em class="fas fa-search"></em>
+
+
+                <input type="search" name=serch-country value="Search For A country">
+
+            </div>
+            <div class="filter">
+
+                <select name="regions" id="regionsFilter" onchange="changeFunc()">
+                
+                <option >Region by Filter</option>
+                <option value="Africa" >Africa</option>
+                <option value="America" >America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe"  >Europe</option>
+                <option value="Oceania">Oceania</option>
+
+            </select>
+            </div>
+        </section>
+        <!--###############################################Countries Section ####################################-->
+        <section class="countries">
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

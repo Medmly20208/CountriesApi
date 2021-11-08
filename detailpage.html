@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="detail.css" id=lightstyle>
+    <meta name="description" content="this an  website to get infos about countries">
+    <link rel="stylesheet" href="detaildarkstyle.css" disabled id=darkstyle>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a6a94f6575.js" crossorigin="anonymous"></script>
+    <title>Front End Mentor Challenge | countries API</title>
+</head>
+
+<body>
+    <header>
+        <h1>Where in the world ?</h1>
+        <div class="mode">
+            <em class="fas fa-moon nonDisplay" id=dark></em>
+            <em class="far fa-moon " id=light></em>
+            <h2>Dark Mode</h2>
+        </div>
+    </header>
+    <main>
+        <section class="btnContanier">
+            <button id=back>
+                <em class="fas fa-arrow-left"></em>
+Back</button>
+        </section>
+        <section class="mainData">
+            <div class="imgContanier">
+                <img src="" alt="" style="width: 100%;height:100%">
+            </div>
+            <div class="dataContanier">
+                <h1><span class=name></span></h1>
+                <div class="mainDataDetails">
+                    <div class="left">
+                        <h3>Native Name</h3>: <span class="nativeName"></span><br>
+                        <h3>Population</h3>: <span class="population"></span><br>
+                        <h3>Region</h3>:<span class="regions"></span><br>
+                        <h3>Sub Region</h3>:<span class="subRegions"></span><br>
+                        <h3>Capital</h3>: <span class="capital"></span><br>
+                    </div>
+                    <div class="right">
+                        <h3>Top level Domain</h3>: <span class="topLevelDomain"></span><br>
+                        <h3>Currencies</h3>: <span class="currencies"></span><br>
+                        <h3>Languages</h3>:<span class="languages"></span><br>
+                    </div>
+                </div>
+                <div class="borderContanier">
+                    <h3>Border Countries</h3>:
+                    <ul class="borders"></ul>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <script src="script2.js"></script>
+</body>

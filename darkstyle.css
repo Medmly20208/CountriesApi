@@ -1,0 +1,160 @@
+/*######################Header###################################*/
+
+.nonDisplay {
+    position: absolute;
+    visibility: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+
+
+/*######################Header###################################*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    padding: 3%;
+    border-bottom: 2px solid gray;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+header .mode {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+header h1,
+header h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+.mode em {
+    cursor: pointer;
+}
+
+
+/*#########################################Main First Paragraph###############################*/
+
+.firstPart {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.searchField {
+    border: 1px solid black;
+    padding: 15px;
+    color: white;
+    background-color: hsl(209, 23%, 22%);
+    text-align: center;
+}
+
+.searchField input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    background-color: hsl(209, 23%, 22%);
+}
+
+.searchField input:active {
+    border: none;
+}
+
+.searchField em {
+    cursor: pointer;
+}
+
+.filter {
+    background-color: white;
+}
+
+.filter select {
+    padding: 10px;
+    color: white;
+    background-color: hsl(209, 23%, 22%);
+}
+
+
+/*############################################################################################*/
+
+
+/*#######################countriessection############################################*/
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+    gap: 20px 30px;
+    margin-bottom: 100px;
+}
+
+.boxCountry img {
+    max-width: 300px;
+    max-height: 200px;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.boxCountry {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(209, 23%, 22%);
+    word-wrap: break-word;
+    padding: 0px;
+    flex-basis: 200px;
+}
+
+.boxCountry .data {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.data h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-wrap: break-word;
+}
+
+.data p {
+    margin: 0px;
+    line-height: 40px;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*############################################################################################*/
+
+
+/*######################################responsive ######################################################*/
+
+@media screen and (max-width:520px) {
+    body {
+        font-size: 14px;
+    }
+    .firstPart {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstPart .filter {
+        margin-top: 20px;
+    }
+}

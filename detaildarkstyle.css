@@ -1,0 +1,159 @@
+/*######################Header###################################*/
+
+.nonDisplay {
+    position: absolute;
+    visibility: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+
+
+/*######################Header###################################*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    padding: 3%;
+    border-bottom: 2px solid gray;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+header .mode {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+header h1,
+header h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+.mode em {
+    cursor: pointer;
+}
+
+
+/*################################################################################################*/
+
+
+/*#############################################################################################*/
+
+
+/*########################Main paragraph############################################*/
+
+main {
+    margin: 3%;
+}
+
+.mainData {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 7px;
+    margin-right: 10px;
+    color: gray;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+li:hover {
+    color: antiquewhite;
+    background-color: gray;
+}
+
+.imgContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.imgContainer img {
+    width: 342px;
+    height: 60%;
+}
+
+.mainDataDetails {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+    grid-column-end: 3;
+    align-items: stretch;
+    line-height: 40px;
+}
+
+h3 {
+    display: inline;
+}
+
+#back {
+    padding: 10px 15px;
+    border: 1px solid white;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*#############################################################################################*/
+
+
+/*#######################responsive#########################*/
+
+@media screen and (max-width:825px) {
+    body header {
+        font-size: 13px;
+    }
+    .mainData {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.2fr;
+    }
+    .mainData .imgContainer {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+    .imgContainer img {
+        font-size: 5%;
+    }
+    .dataContanier {
+        justify-self: center;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .mainDataDetails {
+        flex-direction: column;
+    }
+    .right,
+    .borderContanier {
+        margin-top: 40px;
+    }
+    ul {
+        display: block;
+    }
+}
