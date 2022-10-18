@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/69359301/196505401-27d80884-17e6-4527-
 
 # Built with 
 
- built html,css,js and [https://restcountries.com/](Rest Countries Api)
+ built html,css,js and [Rest Countries API] (https://restcountries.com/))
 
 # Live demo
 
